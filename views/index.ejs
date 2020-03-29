@@ -1,0 +1,4067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <style>
+        #chartdiv {
+            width: 100%;
+            height: 500px
+        }
+    </style> -->
+    <title>Covid-19 Details</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark text-uppercase container-fluid" id="mainNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Covid-19 India</a>
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-md-1">
+                        <a class="nav-link py-3 px-0 px-md-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-md-1">
+                        <a class="nav-link py-3 px-0 px-md-3 rounded js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-md-1">
+                        <a class="nav-link py-3 px-0 px-md-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <!-- <div id="chartdiv" class="my-4" data-dailydata="[]">
+        </div> -->
+        <svg id="my_dataviz" width="1000" height="400"></svg>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                <a class="dropdown-item nav-item show active" id="nav-2020-03-10" data-toggle="tab"
+                    href="#tab-2020-03-10" role="tab" aria-controls="tab-2020-03-10" aria-selected="true"
+                    role="tablist">Tue Mar 10 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-11" data-toggle="tab" href="#tab-2020-03-11"
+                    role="tab" aria-controls="tab-2020-03-11" aria-selected="" role="tablist">Wed Mar 11 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-12" data-toggle="tab" href="#tab-2020-03-12"
+                    role="tab" aria-controls="tab-2020-03-12" aria-selected="" role="tablist">Thu Mar 12 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-13" data-toggle="tab" href="#tab-2020-03-13"
+                    role="tab" aria-controls="tab-2020-03-13" aria-selected="" role="tablist">Fri Mar 13 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-14" data-toggle="tab" href="#tab-2020-03-14"
+                    role="tab" aria-controls="tab-2020-03-14" aria-selected="" role="tablist">Sat Mar 14 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-15" data-toggle="tab" href="#tab-2020-03-15"
+                    role="tab" aria-controls="tab-2020-03-15" aria-selected="" role="tablist">Sun Mar 15 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-16" data-toggle="tab" href="#tab-2020-03-16"
+                    role="tab" aria-controls="tab-2020-03-16" aria-selected="" role="tablist">Mon Mar 16 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-17" data-toggle="tab" href="#tab-2020-03-17"
+                    role="tab" aria-controls="tab-2020-03-17" aria-selected="" role="tablist">Tue Mar 17 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-18" data-toggle="tab" href="#tab-2020-03-18"
+                    role="tab" aria-controls="tab-2020-03-18" aria-selected="" role="tablist">Wed Mar 18 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-19" data-toggle="tab" href="#tab-2020-03-19"
+                    role="tab" aria-controls="tab-2020-03-19" aria-selected="" role="tablist">Thu Mar 19 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-20" data-toggle="tab" href="#tab-2020-03-20"
+                    role="tab" aria-controls="tab-2020-03-20" aria-selected="" role="tablist">Fri Mar 20 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-21" data-toggle="tab" href="#tab-2020-03-21"
+                    role="tab" aria-controls="tab-2020-03-21" aria-selected="" role="tablist">Sat Mar 21 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-22" data-toggle="tab" href="#tab-2020-03-22"
+                    role="tab" aria-controls="tab-2020-03-22" aria-selected="" role="tablist">Sun Mar 22 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-23" data-toggle="tab" href="#tab-2020-03-23"
+                    role="tab" aria-controls="tab-2020-03-23" aria-selected="" role="tablist">Mon Mar 23 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-24" data-toggle="tab" href="#tab-2020-03-24"
+                    role="tab" aria-controls="tab-2020-03-24" aria-selected="" role="tablist">Tue Mar 24 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-25" data-toggle="tab" href="#tab-2020-03-25"
+                    role="tab" aria-controls="tab-2020-03-25" aria-selected="" role="tablist">Wed Mar 25 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-26" data-toggle="tab" href="#tab-2020-03-26"
+                    role="tab" aria-controls="tab-2020-03-26" aria-selected="" role="tablist">Thu Mar 26 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-27" data-toggle="tab" href="#tab-2020-03-27"
+                    role="tab" aria-controls="tab-2020-03-27" aria-selected="" role="tablist">Fri Mar 27 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-28" data-toggle="tab" href="#tab-2020-03-28"
+                    role="tab" aria-controls="tab-2020-03-28" aria-selected="" role="tablist">Sat Mar 28 2020</a>
+
+                <a class="dropdown-item nav-item " id="nav-2020-03-29" data-toggle="tab" href="#tab-2020-03-29"
+                    role="tab" aria-controls="tab-2020-03-29" aria-selected="" role="tablist">Sun Mar 29 2020</a>
+
+            </div>
+        </div>
+        <div class="tab-content" id="tabContent">
+
+            <div class="tab-pane fade show active" id="tab-2020-03-10" role="tabpanel" aria-labelledby="nav-2020-03-10">
+                <div class="w-100 bg-light">
+                    <h4>Tue Mar 10 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Delhi</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Kerala</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Rajasthan</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Telengana</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Uttar Pradesh</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ladakh</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Karnataka</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>29</td>
+                            <td>16</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-11" role="tabpanel" aria-labelledby="nav-2020-03-11">
+                <div class="w-100 bg-light">
+                    <h4>Wed Mar 11 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Delhi</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Kerala</td>
+                            <td>17</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Rajasthan</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Telengana</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Uttar Pradesh</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ladakh</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Karnataka</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>42</td>
+                            <td>16</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-12" role="tabpanel" aria-labelledby="nav-2020-03-12">
+                <div class="w-100 bg-light">
+                    <h4>Thu Mar 12 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Delhi</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Kerala</td>
+                            <td>17</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Rajasthan</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Telengana</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Uttar Pradesh</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ladakh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Karnataka</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Maharashtra</td>
+                            <td>11</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>56</td>
+                            <td>17</td>
+                            <td></td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-13" role="tabpanel" aria-labelledby="nav-2020-03-13">
+                <div class="w-100 bg-light">
+                    <h4>Fri Mar 13 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Delhi</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Kerala</td>
+                            <td>19</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Rajasthan</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Telengana</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Uttar Pradesh</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ladakh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Karnataka</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Maharashtra</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Andhra Pradesh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>65</td>
+                            <td>17</td>
+                            <td>10</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-14" role="tabpanel" aria-labelledby="nav-2020-03-14">
+                <div class="w-100 bg-light">
+                    <h4>Sat Mar 14 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Delhi</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Kerala</td>
+                            <td>19</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Rajasthan</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Telengana</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Uttar Pradesh</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ladakh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Karnataka</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Maharashtra</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Andhra Pradesh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>67</td>
+                            <td>17</td>
+                            <td>10</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-15" role="tabpanel" aria-labelledby="nav-2020-03-15">
+                <div class="w-100 bg-light">
+                    <h4>Sun Mar 15 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Delhi</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Karnataka</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Kerala</td>
+                            <td>22</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Maharashtra</td>
+                            <td>32</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Rajasthan</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Telengana</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Ladakh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Uttar Pradesh</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Uttarakhand</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>93</td>
+                            <td>17</td>
+                            <td>13</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-16" role="tabpanel" aria-labelledby="nav-2020-03-16">
+                <div class="w-100 bg-light">
+                    <h4>Mon Mar 16 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Delhi</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Haryana</td>
+                            <td>0</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Karnataka</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Kerala</td>
+                            <td>23</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Maharashtra</td>
+                            <td>32</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Odisha</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Rajasthan</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Telengana</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Ladakh</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Uttar Pradesh</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Uttarakhand</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>97</td>
+                            <td>17</td>
+                            <td>13</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-17" role="tabpanel" aria-labelledby="nav-2020-03-17">
+                <div class="w-100 bg-light">
+                    <h4>Tue Mar 17 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Delhi</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Haryana</td>
+                            <td>1</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Karnataka</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Kerala</td>
+                            <td>22</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Maharashtra</td>
+                            <td>36</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Odisha</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Rajasthan</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Telengana</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Ladakh</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Uttar Pradesh</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>103</td>
+                            <td>22</td>
+                            <td>13</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-18" role="tabpanel" aria-labelledby="nav-2020-03-18">
+                <div class="w-100 bg-light">
+                    <h4>Wed Mar 18 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Delhi</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Haryana</td>
+                            <td>3</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Karnataka</td>
+                            <td>11</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Kerala</td>
+                            <td>25</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Maharashtra</td>
+                            <td>39</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Odisha</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Punjab</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Rajasthan</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Tamil Nadu</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Telengana</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Ladakh</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Uttar Pradesh</td>
+                            <td>15</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Uttarakhand</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>West Bengal</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>126</td>
+                            <td>25</td>
+                            <td>14</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-19" role="tabpanel" aria-labelledby="nav-2020-03-19">
+                <div class="w-100 bg-light">
+                    <h4>Thu Mar 19 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Delhi</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Haryana</td>
+                            <td>3</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Karnataka</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Kerala</td>
+                            <td>25</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Maharashtra</td>
+                            <td>44</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Odisha</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Punjab</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Rajasthan</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Tamil Nadu</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Telengana</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Chandigarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Ladakh</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Uttar Pradesh</td>
+                            <td>18</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Uttarakhand</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>West Bengal</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>148</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-20" role="tabpanel" aria-labelledby="nav-2020-03-20">
+                <div class="w-100 bg-light">
+                    <h4>Fri Mar 20 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Delhi</td>
+                            <td>16</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Gujarat</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Haryana</td>
+                            <td>3</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Karnataka</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Kerala</td>
+                            <td>26</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Maharashtra</td>
+                            <td>49</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Punjab</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Rajasthan</td>
+                            <td>15</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Tamil Nadu</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Telengana</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Chandigarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Ladakh</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Uttar Pradesh</td>
+                            <td>22</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Uttarakhand</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>West Bengal</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>191</td>
+                            <td>32</td>
+                            <td>23</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-21" role="tabpanel" aria-labelledby="nav-2020-03-21">
+                <div class="w-100 bg-light">
+                    <h4>Sat Mar 21 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Delhi</td>
+                            <td>25</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Gujarat</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Haryana</td>
+                            <td>3</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Himachal Pradesh</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Karnataka</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Kerala</td>
+                            <td>33</td>
+                            <td>7</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Madhya Pradesh</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Maharashtra</td>
+                            <td>60</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Punjab</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Rajasthan</td>
+                            <td>15</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Tamil Nadu</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Telengana</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Chandigarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Uttar Pradesh</td>
+                            <td>23</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Uttarakhand</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>West Bengal</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>244</td>
+                            <td>39</td>
+                            <td>23</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-22" role="tabpanel" aria-labelledby="nav-2020-03-22">
+                <div class="w-100 bg-light">
+                    <h4>Sun Mar 22 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Bihar</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Delhi</td>
+                            <td>28</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Gujarat</td>
+                            <td>18</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Haryana</td>
+                            <td>7</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Himachal Pradesh</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Karnataka</td>
+                            <td>26</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Kerala</td>
+                            <td>45</td>
+                            <td>7</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Madhya Pradesh</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Maharashtra</td>
+                            <td>64</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Punjab</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Rajasthan</td>
+                            <td>22</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Tamil Nadu</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Telengana</td>
+                            <td>11</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Chandigarh</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Uttar Pradesh</td>
+                            <td>26</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Uttarakhand</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>West Bengal</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>319</td>
+                            <td>41</td>
+                            <td>24</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-23" role="tabpanel" aria-labelledby="nav-2020-03-23">
+                <div class="w-100 bg-light">
+                    <h4>Mon Mar 23 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Bihar</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Delhi</td>
+                            <td>28</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Gujarat</td>
+                            <td>29</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Haryana</td>
+                            <td>12</td>
+                            <td>14</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Himachal Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Karnataka</td>
+                            <td>33</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Kerala</td>
+                            <td>60</td>
+                            <td>7</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Madhya Pradesh</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Maharashtra</td>
+                            <td>71</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Punjab</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Rajasthan</td>
+                            <td>26</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Tamil Nadu</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Telengana</td>
+                            <td>22</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Chandigarh</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Uttar Pradesh</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Uttarakhand</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>West Bengal</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>394</td>
+                            <td>40</td>
+                            <td>35</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-24" role="tabpanel" aria-labelledby="nav-2020-03-24">
+                <div class="w-100 bg-light">
+                    <h4>Tue Mar 24 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Bihar</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Delhi</td>
+                            <td>29</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Gujarat</td>
+                            <td>32</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Haryana</td>
+                            <td>14</td>
+                            <td>14</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Himachal Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Karnataka</td>
+                            <td>37</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Kerala</td>
+                            <td>87</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Madhya Pradesh</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Maharashtra</td>
+                            <td>86</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Manipur</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Punjab</td>
+                            <td>29</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Rajasthan</td>
+                            <td>30</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Tamil Nadu</td>
+                            <td>13</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Telengana</td>
+                            <td>25</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Chandigarh</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Uttar Pradesh</td>
+                            <td>32</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Uttarakhand</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">24</th>
+                            <td>West Bengal</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>476</td>
+                            <td>43</td>
+                            <td>40</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-25" role="tabpanel" aria-labelledby="nav-2020-03-25">
+                <div class="w-100 bg-light">
+                    <h4>Wed Mar 25 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Bihar</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Chhattisgarh</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Delhi</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Gujarat</td>
+                            <td>37</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Haryana</td>
+                            <td>14</td>
+                            <td>14</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Himachal Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Karnataka</td>
+                            <td>41</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Kerala</td>
+                            <td>101</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Madhya Pradesh</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Maharashtra</td>
+                            <td>125</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Manipur</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Mizoram</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Punjab</td>
+                            <td>29</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Rajasthan</td>
+                            <td>34</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Tamil Nadu</td>
+                            <td>16</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Telengana</td>
+                            <td>25</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Chandigarh</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Uttar Pradesh</td>
+                            <td>36</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">24</th>
+                            <td>Uttarakhand</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>West Bengal</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>563</td>
+                            <td>43</td>
+                            <td>43</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-26" role="tabpanel" aria-labelledby="nav-2020-03-26">
+                <div class="w-100 bg-light">
+                    <h4>Thu Mar 26 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andaman and Nicobar Islands</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Andhra Pradesh</td>
+                            <td>11</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Bihar</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Chandigarh</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Chhattisgarh</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Delhi</td>
+                            <td>35</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Goa</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Gujarat</td>
+                            <td>42</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Haryana</td>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Himachal Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Karnataka</td>
+                            <td>55</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Kerala</td>
+                            <td>110</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Madhya Pradesh</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Maharashtra</td>
+                            <td>121</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Manipur</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Mizoram</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Punjab</td>
+                            <td>33</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Rajasthan</td>
+                            <td>39</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Tamil Nadu</td>
+                            <td>20</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">24</th>
+                            <td>Telengana</td>
+                            <td>34</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>Uttarakhand</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">26</th>
+                            <td>Uttar Pradesh</td>
+                            <td>40</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">27</th>
+                            <td>West Bengal</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>647</td>
+                            <td>47</td>
+                            <td>45</td>
+                            <td>15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-27" role="tabpanel" aria-labelledby="nav-2020-03-27">
+                <div class="w-100 bg-light">
+                    <h4>Fri Mar 27 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andaman and Nicobar Islands</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Andhra Pradesh</td>
+                            <td>12</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Bihar</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Chandigarh</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Chhattisgarh</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Delhi</td>
+                            <td>35</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Goa</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Gujarat</td>
+                            <td>42</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Haryana</td>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Himachal Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Karnataka</td>
+                            <td>55</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Kerala</td>
+                            <td>129</td>
+                            <td>8</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Madhya Pradesh</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Maharashtra</td>
+                            <td>127</td>
+                            <td>3</td>
+                            <td>15</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Manipur</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Mizoram</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Odisha</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Punjab</td>
+                            <td>33</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Rajasthan</td>
+                            <td>39</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Tamil Nadu</td>
+                            <td>23</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">24</th>
+                            <td>Telengana</td>
+                            <td>35</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>Uttarakhand</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">26</th>
+                            <td>Uttar Pradesh</td>
+                            <td>40</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">27</th>
+                            <td>West Bengal</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>677</td>
+                            <td>47</td>
+                            <td>67</td>
+                            <td>17</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-28" role="tabpanel" aria-labelledby="nav-2020-03-28">
+                <div class="w-100 bg-light">
+                    <h4>Sat Mar 28 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Andhra Pradesh</td>
+                            <td>14</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Andaman and Nicobar Islands</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Bihar</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Chandigarh</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Chhattisgarh</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Delhi</td>
+                            <td>38</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Goa</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Gujarat</td>
+                            <td>44</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Haryana</td>
+                            <td>19</td>
+                            <td>14</td>
+                            <td>12</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Himachal Pradesh</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Jammu and Kashmir</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Karnataka</td>
+                            <td>55</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Kerala</td>
+                            <td>168</td>
+                            <td>8</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Ladakh</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Madhya Pradesh</td>
+                            <td>30</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Maharashtra</td>
+                            <td>177</td>
+                            <td>3</td>
+                            <td>25</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Manipur</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Mizoram</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Odisha</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Puducherry</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">21</th>
+                            <td>Punjab</td>
+                            <td>38</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">22</th>
+                            <td>Rajasthan</td>
+                            <td>52</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">23</th>
+                            <td>Tamil Nadu</td>
+                            <td>34</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">24</th>
+                            <td>Telengana</td>
+                            <td>46</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">25</th>
+                            <td>Uttarakhand</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">26</th>
+                            <td>Uttar Pradesh</td>
+                            <td>54</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">27</th>
+                            <td>West Bengal</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td>862</td>
+                            <td>47</td>
+                            <td>80</td>
+                            <td>19</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="tab-2020-03-29" role="tabpanel" aria-labelledby="nav-2020-03-29">
+                <div class="w-100 bg-light">
+                    <h4>Sun Mar 29 2020</h4>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr class="bg-light">
+                            <th scope="col"><strong>S. No.</strong></th>
+                            <th scope="col"><strong>Name of State / UT</th>
+                            <th scope="col"><strong>Confirmed cases (Indian National)</strong></th>
+                            <th scope="col"><strong>Confirmed cases ( Foreign National )</strong></th>
+                            <th scope="col"><strong>Discharged</strong></th>
+                            <th scope="col"><strong>Deaths</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th> # </th>
+                            <th> Total </th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+<!-- AM Charts -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<script>
+
+    // The svg
+    var svg = d3.select("svg"),
+        width = +svg.attr("width"),
+        height = +svg.attr("height");
+
+    // Map and projection
+    var path = d3.geoPath();
+    var projection = d3.geoMercator()
+        .scale(70)
+        .center([0, 20])
+        .translate([width / 2, height / 2]);
+
+    // Data and color scale
+    var data = d3.map();
+    var colorScale = d3.scaleThreshold()
+        .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
+        .range(d3.schemeBlues[7]);
+
+    // Load external data and boot
+    d3.queue()
+        .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+        .await(ready);
+
+    function ready(error, topo) {
+
+        // Draw the map
+        svg.append("g")
+            .selectAll("path")
+            .data(topo.features)
+            .enter()
+            .append("path")
+            // draw each country
+            .attr("d", d3.geoPath()
+                .projection(projection)
+            )
+            // set the color of each country
+            .attr("fill", function (d) {
+                d.total = data.get(d.id) || 0;
+                return colorScale(d.total);
+            });
+    }
+
+</script>
+<!-- <script>
+    const dailyData = JSON.parse(document.getElementById('chartdiv').dataset.dailydata);
+
+    am4core.ready(function () {
+        window.onload = function () {
+            const currentMap = "indiaLow";
+            const title = "India Covid-19";
+
+            // Create map instance
+            const map = am4core.create("chartdiv", am4maps.MapChart);
+
+            map.titles.create().text = title;
+
+            // Set map definition
+            map.geodataSource.url = "https://www.amcharts.com/lib/4/geodata/json/" + currentMap + ".json";
+            map.geodataSource.events.on("parseended", function (ev) {
+                const data = [];
+                const { features } = ev.target.data;
+                for (let i = 0; i < features.length; i++) {
+                    const recievedData = dailyData.find(d => d.state_code === features[i].id)
+                    if (!recievedData) console.log({ recievedData }, features[i].id);
+
+                    data.push({
+                        id: features[i].id,
+                        value: recievedData ? recievedData.confirmed_indian + recievedData.confirmed_foreigner : 0
+                    })
+                }
+                polygonSeries.data = data;
+            })
+
+            // Set projection
+            map.projection = new am4maps.projections.Mercator();
+
+            // Create map polygon series
+            var polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
+
+            //Set min/max fill color for each area
+            polygonSeries.heatRules.push({
+                property: "fill",
+                target: polygonSeries.mapPolygons.template,
+                min: am4core.color("#f5faeb"),
+                max: am4core.color("#2b557a"),
+            });
+
+            // Make map load polygon data (state shapes and names) from GeoJSON
+            polygonSeries.useGeodata = true;
+
+            // Set up heat legend
+            const maxValue = Math.max(...dailyData.map(d => d.confirmed_indian + d.confirmed_foreigner))
+            let heatLegend = map.createChild(am4maps.HeatLegend);
+            heatLegend.series = polygonSeries;
+            heatLegend.align = "right";
+            heatLegend.width = am4core.percent(25);
+            heatLegend.marginRight = am4core.percent(4);
+            heatLegend.minValue = 0;
+            heatLegend.maxValue = maxValue;
+            heatLegend.valign = "bottom";
+
+            // Set up custom heat map legend labels using axis ranges
+            var minRange = heatLegend.valueAxis.axisRanges.create();
+            minRange.value = heatLegend.minValue;
+            minRange.label.text = heatLegend.minValue;
+            var maxRange = heatLegend.valueAxis.axisRanges.create();
+            maxRange.value = heatLegend.maxValue;
+            maxRange.label.text = heatLegend.maxValue;
+
+            // Blank out internal heat legend value axis labels
+            heatLegend.valueAxis.renderer.labels.template.adapter.add("text", function (labelText) {
+                return "";
+            });
+
+            // Configure series tooltip
+            var polygonTemplate = polygonSeries.mapPolygons.template;
+            polygonTemplate.tooltipText = "{name}: {value}";
+            polygonTemplate.nonScalingStroke = true;
+            polygonTemplate.strokeWidth = 0.5;
+
+            // Create hover state and set alternative fill color
+            var hs = polygonTemplate.states.create("hover");
+            hs.properties.fill = map.colors.getIndex(1).brighten(-0.5);
+
+
+        };
+
+    });
+</script> -->
+</script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=cvid-api:* nodemon ./bin/www"
+    "start": "DEBUG=cvid-api:* nodemon --ignore data.json ./bin/www"
   },
   "dependencies": {
     "axios": "^0.19.2",

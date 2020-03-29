@@ -1,0 +1,3295 @@
+{
+    "dailyData": [
+        {
+            "id": 1,
+            "date": "2020-03-10",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Delhi",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Kerala",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Rajasthan",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Telengana",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Ladakh",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Karnataka",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-KA"
+                }
+            ],
+            "total": {
+                "confirmed": 45,
+                "discharged": 0,
+                "deaths": 0
+            }
+        },
+        {
+            "id": 2,
+            "date": "2020-03-11",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Delhi",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Kerala",
+                    "confirmed": 17,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Rajasthan",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Telengana",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Ladakh",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Karnataka",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-KA"
+                }
+            ],
+            "total": {
+                "confirmed": 58,
+                "discharged": 0,
+                "deaths": 0
+            }
+        },
+        {
+            "id": 3,
+            "date": "2020-03-12",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Delhi",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Kerala",
+                    "confirmed": 17,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Rajasthan",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Telengana",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 11,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Ladakh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Karnataka",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Maharashtra",
+                    "confirmed": 11,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MH"
+                }
+            ],
+            "total": {
+                "confirmed": 73,
+                "deaths": 0
+            }
+        },
+        {
+            "id": 4,
+            "date": "2020-03-13",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Delhi",
+                    "confirmed": 7,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Kerala",
+                    "confirmed": 19,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Rajasthan",
+                    "confirmed": 3,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Telengana",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 11,
+                    "discharged": 5,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Ladakh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Karnataka",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Maharashtra",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                }
+            ],
+            "total": {
+                "confirmed": 82,
+                "discharged": 10,
+                "deaths": 2
+            }
+        },
+        {
+            "id": 5,
+            "date": "2020-03-14",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Delhi",
+                    "confirmed": 7,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Kerala",
+                    "confirmed": 19,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Rajasthan",
+                    "confirmed": 3,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Telengana",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 12,
+                    "discharged": 5,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Ladakh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Karnataka",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Maharashtra",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                }
+            ],
+            "total": {
+                "confirmed": 84,
+                "discharged": 10,
+                "deaths": 2
+            }
+        },
+        {
+            "id": 6,
+            "date": "2020-03-15",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Delhi",
+                    "confirmed": 7,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Karnataka",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Kerala",
+                    "confirmed": 22,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Maharashtra",
+                    "confirmed": 32,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Rajasthan",
+                    "confirmed": 4,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Telengana",
+                    "confirmed": 3,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Ladakh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 13,
+                    "discharged": 4,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                }
+            ],
+            "total": {
+                "confirmed": 110,
+                "discharged": 13,
+                "deaths": 2
+            }
+        },
+        {
+            "id": 7,
+            "date": "2020-03-16",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Delhi",
+                    "confirmed": 7,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Haryana",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Karnataka",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Kerala",
+                    "confirmed": 23,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Maharashtra",
+                    "confirmed": 32,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Odisha",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Rajasthan",
+                    "confirmed": 4,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Telengana",
+                    "confirmed": 3,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Ladakh",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 13,
+                    "discharged": 4,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                }
+            ],
+            "total": {
+                "confirmed": 114,
+                "discharged": 13,
+                "deaths": 2
+            }
+        },
+        {
+            "id": 8,
+            "date": "2020-03-17",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Delhi",
+                    "confirmed": 7,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Haryana",
+                    "confirmed": 15,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Karnataka",
+                    "confirmed": 8,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Kerala",
+                    "confirmed": 24,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Maharashtra",
+                    "confirmed": 39,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Odisha",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Rajasthan",
+                    "confirmed": 4,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Telengana",
+                    "confirmed": 4,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Ladakh",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 13,
+                    "discharged": 4,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                }
+            ],
+            "total": {
+                "confirmed": 125,
+                "discharged": 13,
+                "deaths": 3
+            }
+        },
+        {
+            "id": 9,
+            "date": "2020-03-18",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Delhi",
+                    "confirmed": 10,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Haryana",
+                    "confirmed": 17,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Karnataka",
+                    "confirmed": 11,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Kerala",
+                    "confirmed": 27,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Maharashtra",
+                    "confirmed": 42,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Odisha",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Punjab",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Rajasthan",
+                    "confirmed": 4,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Telengana",
+                    "confirmed": 6,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Ladakh",
+                    "confirmed": 8,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 16,
+                    "discharged": 5,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 17,
+                    "state_name": "West Bengal",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 151,
+                "discharged": 14,
+                "deaths": 3
+            }
+        },
+        {
+            "id": 10,
+            "date": "2020-03-19",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CT"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Delhi",
+                    "confirmed": 12,
+                    "discharged": 3,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Haryana",
+                    "confirmed": 17,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Karnataka",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Kerala",
+                    "confirmed": 27,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Maharashtra",
+                    "confirmed": 47,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Odisha",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Punjab",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Rajasthan",
+                    "confirmed": 7,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 2,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Telengana",
+                    "confirmed": 6,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Chandigarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Ladakh",
+                    "confirmed": 8,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 19,
+                    "discharged": 9,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 19,
+                    "state_name": "West Bengal",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 173,
+                "discharged": 20,
+                "deaths": 4
+            }
+        },
+        {
+            "id": 11,
+            "date": "2020-03-20",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Delhi",
+                    "confirmed": 17,
+                    "discharged": 5,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Gujarat",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Haryana",
+                    "confirmed": 17,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Karnataka",
+                    "confirmed": 15,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Kerala",
+                    "confirmed": 28,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Maharashtra",
+                    "confirmed": 52,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Punjab",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Rajasthan",
+                    "confirmed": 17,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 3,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Telengana",
+                    "confirmed": 17,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Chandigarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Ladakh",
+                    "confirmed": 10,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 23,
+                    "discharged": 9,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 20,
+                    "state_name": "West Bengal",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 223,
+                "discharged": 23,
+                "deaths": 4
+            }
+        },
+        {
+            "id": 12,
+            "date": "2020-03-21",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Delhi",
+                    "confirmed": 26,
+                    "discharged": 5,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Gujarat",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Haryana",
+                    "confirmed": 17,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Karnataka",
+                    "confirmed": 15,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Kerala",
+                    "confirmed": 40,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Maharashtra",
+                    "confirmed": 63,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Punjab",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Rajasthan",
+                    "confirmed": 17,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 3,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Telengana",
+                    "confirmed": 21,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Chandigarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 24,
+                    "discharged": 9,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 22,
+                    "state_name": "West Bengal",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 283,
+                "discharged": 23,
+                "deaths": 4
+            }
+        },
+        {
+            "id": 13,
+            "date": "2020-03-22",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Bihar",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Delhi",
+                    "confirmed": 29,
+                    "discharged": 5,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Gujarat",
+                    "confirmed": 18,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Haryana",
+                    "confirmed": 21,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Karnataka",
+                    "confirmed": 26,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Kerala",
+                    "confirmed": 52,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Maharashtra",
+                    "confirmed": 67,
+                    "discharged": 0,
+                    "deaths": 2,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Punjab",
+                    "confirmed": 21,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Rajasthan",
+                    "confirmed": 24,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 7,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Telengana",
+                    "confirmed": 22,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Chandigarh",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 27,
+                    "discharged": 9,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 23,
+                    "state_name": "West Bengal",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 360,
+                "discharged": 24,
+                "deaths": 7
+            }
+        },
+        {
+            "id": 14,
+            "date": "2020-03-23",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Bihar",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Delhi",
+                    "confirmed": 29,
+                    "discharged": 5,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Gujarat",
+                    "confirmed": 29,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Haryana",
+                    "confirmed": 26,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Karnataka",
+                    "confirmed": 33,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Kerala",
+                    "confirmed": 67,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Maharashtra",
+                    "confirmed": 74,
+                    "discharged": 0,
+                    "deaths": 2,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Punjab",
+                    "confirmed": 21,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Rajasthan",
+                    "confirmed": 28,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 9,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Telengana",
+                    "confirmed": 32,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Chandigarh",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 31,
+                    "discharged": 9,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 23,
+                    "state_name": "West Bengal",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 434,
+                "discharged": 35,
+                "deaths": 9
+            }
+        },
+        {
+            "id": 15,
+            "date": "2020-03-24",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 8,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Bihar",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Delhi",
+                    "confirmed": 30,
+                    "discharged": 6,
+                    "deaths": 2,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Gujarat",
+                    "confirmed": 33,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Haryana",
+                    "confirmed": 28,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Karnataka",
+                    "confirmed": 37,
+                    "discharged": 3,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Kerala",
+                    "confirmed": 95,
+                    "discharged": 4,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Maharashtra",
+                    "confirmed": 89,
+                    "discharged": 0,
+                    "deaths": 2,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Manipur",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MN"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Punjab",
+                    "confirmed": 29,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Rajasthan",
+                    "confirmed": 32,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 15,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Telengana",
+                    "confirmed": 35,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Chandigarh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 33,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 23,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 24,
+                    "state_name": "West Bengal",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 519,
+                "discharged": 40,
+                "deaths": 10
+            }
+        },
+        {
+            "id": 16,
+            "date": "2020-03-25",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 9,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Bihar",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Delhi",
+                    "confirmed": 31,
+                    "discharged": 6,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Gujarat",
+                    "confirmed": 38,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Haryana",
+                    "confirmed": 28,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Karnataka",
+                    "confirmed": 41,
+                    "discharged": 3,
+                    "deaths": 1,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Kerala",
+                    "confirmed": 109,
+                    "discharged": 4,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Maharashtra",
+                    "confirmed": 128,
+                    "discharged": 1,
+                    "deaths": 3,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Manipur",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MN"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Mizoram",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MZ"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Punjab",
+                    "confirmed": 29,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Rajasthan",
+                    "confirmed": 36,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 18,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Telengana",
+                    "confirmed": 35,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Chandigarh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 7,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 23,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 37,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 24,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 4,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 25,
+                    "state_name": "West Bengal",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 606,
+                "discharged": 43,
+                "deaths": 10
+            }
+        },
+        {
+            "id": 17,
+            "date": "2020-03-26",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andaman and Nicobar Islands",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AN"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 11,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Bihar",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Chandigarh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Delhi",
+                    "confirmed": 36,
+                    "discharged": 6,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Goa",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-GA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Gujarat",
+                    "confirmed": 43,
+                    "discharged": 0,
+                    "deaths": 3,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Haryana",
+                    "confirmed": 30,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 13,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Karnataka",
+                    "confirmed": 55,
+                    "discharged": 3,
+                    "deaths": 2,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Kerala",
+                    "confirmed": 118,
+                    "discharged": 6,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 20,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Maharashtra",
+                    "confirmed": 124,
+                    "discharged": 1,
+                    "deaths": 3,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Manipur",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MN"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Mizoram",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MZ"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Punjab",
+                    "confirmed": 33,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Rajasthan",
+                    "confirmed": 41,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 23,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 26,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 24,
+                    "state_name": "Telengana",
+                    "confirmed": 44,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 25,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 26,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 41,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 27,
+                    "state_name": "West Bengal",
+                    "confirmed": 10,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 694,
+                "discharged": 45,
+                "deaths": 15
+            }
+        },
+        {
+            "id": 18,
+            "date": "2020-03-27",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andaman and Nicobar Islands",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AN"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 12,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Bihar",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Chandigarh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Delhi",
+                    "confirmed": 36,
+                    "discharged": 6,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Goa",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-GA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Gujarat",
+                    "confirmed": 43,
+                    "discharged": 0,
+                    "deaths": 3,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Haryana",
+                    "confirmed": 30,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 13,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Karnataka",
+                    "confirmed": 55,
+                    "discharged": 3,
+                    "deaths": 2,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Kerala",
+                    "confirmed": 137,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 20,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Maharashtra",
+                    "confirmed": 130,
+                    "discharged": 15,
+                    "deaths": 4,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Manipur",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MN"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Mizoram",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MZ"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Odisha",
+                    "confirmed": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Punjab",
+                    "confirmed": 33,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Rajasthan",
+                    "confirmed": 41,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 23,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 29,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 24,
+                    "state_name": "Telengana",
+                    "confirmed": 45,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 25,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 26,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 41,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 27,
+                    "state_name": "West Bengal",
+                    "confirmed": 10,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 724,
+                "discharged": 67,
+                "deaths": 17
+            }
+        },
+        {
+            "id": 19,
+            "date": "2020-03-28",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 14,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Andaman and Nicobar Islands",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AN"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Bihar",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Chandigarh",
+                    "confirmed": 8,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 6,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Delhi",
+                    "confirmed": 39,
+                    "discharged": 6,
+                    "deaths": 1,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Goa",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-GA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Gujarat",
+                    "confirmed": 45,
+                    "discharged": 0,
+                    "deaths": 3,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Haryana",
+                    "confirmed": 33,
+                    "discharged": 12,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 20,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Karnataka",
+                    "confirmed": 55,
+                    "discharged": 3,
+                    "deaths": 2,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Kerala",
+                    "confirmed": 176,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 30,
+                    "discharged": 0,
+                    "deaths": 2,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Maharashtra",
+                    "confirmed": 180,
+                    "discharged": 25,
+                    "deaths": 5,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Manipur",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MN"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Mizoram",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MZ"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Odisha",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Punjab",
+                    "confirmed": 38,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Rajasthan",
+                    "confirmed": 54,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 23,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 40,
+                    "discharged": 2,
+                    "deaths": 1,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 24,
+                    "state_name": "Telengana",
+                    "confirmed": 56,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-TS"
+                },
+                {
+                    "id": 25,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-UK"
+                },
+                {
+                    "id": 26,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 55,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 27,
+                    "state_name": "West Bengal",
+                    "confirmed": 15,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 909,
+                "discharged": 80,
+                "deaths": 19
+            }
+        },
+        {
+            "id": 20,
+            "date": "2020-03-29",
+            "s_data": [
+                {
+                    "id": 1,
+                    "state_name": "Andhra Pradesh",
+                    "confirmed": 19,
+                    "discharged": 1,
+                    "deaths": 0,
+                    "state_code": "IN-AP"
+                },
+                {
+                    "id": 2,
+                    "state_name": "Andaman and Nicobar Islands",
+                    "confirmed": 9,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-AN"
+                },
+                {
+                    "id": 3,
+                    "state_name": "Bihar",
+                    "confirmed": 11,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-BR"
+                },
+                {
+                    "id": 4,
+                    "state_name": "Chandigarh",
+                    "confirmed": 8,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CG"
+                },
+                {
+                    "id": 5,
+                    "state_name": "Chhattisgarh",
+                    "confirmed": 7,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-CH"
+                },
+                {
+                    "id": 6,
+                    "state_name": "Delhi",
+                    "confirmed": 49,
+                    "discharged": 6,
+                    "deaths": 2,
+                    "state_code": "IN-DL"
+                },
+                {
+                    "id": 7,
+                    "state_name": "Goa",
+                    "confirmed": 5,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-GA"
+                },
+                {
+                    "id": 8,
+                    "state_name": "Gujarat",
+                    "confirmed": 58,
+                    "discharged": 1,
+                    "deaths": 5,
+                    "state_code": "IN-GJ"
+                },
+                {
+                    "id": 9,
+                    "state_name": "Haryana",
+                    "confirmed": 33,
+                    "discharged": 17,
+                    "deaths": 0,
+                    "state_code": "IN-HR"
+                },
+                {
+                    "id": 10,
+                    "state_name": "Himachal Pradesh",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-HP"
+                },
+                {
+                    "id": 11,
+                    "state_name": "Jammu and Kashmir",
+                    "confirmed": 31,
+                    "discharged": 1,
+                    "deaths": 2,
+                    "state_code": "IN-JK"
+                },
+                {
+                    "id": 12,
+                    "state_name": "Karnataka",
+                    "confirmed": 76,
+                    "discharged": 5,
+                    "deaths": 3,
+                    "state_code": "IN-KA"
+                },
+                {
+                    "id": 13,
+                    "state_name": "Kerala",
+                    "confirmed": 182,
+                    "discharged": 15,
+                    "deaths": 1,
+                    "state_code": "IN-KL"
+                },
+                {
+                    "id": 14,
+                    "state_name": "Ladakh",
+                    "confirmed": 13,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-LA"
+                },
+                {
+                    "id": 15,
+                    "state_name": "Madhya Pradesh",
+                    "confirmed": 30,
+                    "discharged": 0,
+                    "deaths": 2,
+                    "state_code": "IN-MP"
+                },
+                {
+                    "id": 16,
+                    "state_name": "Maharashtra",
+                    "confirmed": 186,
+                    "discharged": 25,
+                    "deaths": 6,
+                    "state_code": "IN-MH"
+                },
+                {
+                    "id": 17,
+                    "state_name": "Manipur",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MN"
+                },
+                {
+                    "id": 18,
+                    "state_name": "Mizoram",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-MZ"
+                },
+                {
+                    "id": 19,
+                    "state_name": "Odisha",
+                    "confirmed": 3,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-OR"
+                },
+                {
+                    "id": 20,
+                    "state_name": "Puducherry",
+                    "confirmed": 1,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "state_code": "IN-PY"
+                },
+                {
+                    "id": 21,
+                    "state_name": "Punjab",
+                    "confirmed": 38,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-PB"
+                },
+                {
+                    "id": 22,
+                    "state_name": "Rajasthan",
+                    "confirmed": 55,
+                    "discharged": 3,
+                    "deaths": 0,
+                    "state_code": "IN-RJ"
+                },
+                {
+                    "id": 23,
+                    "state_name": "Tamil Nadu",
+                    "confirmed": 49,
+                    "discharged": 4,
+                    "deaths": 1,
+                    "state_code": "IN-TN"
+                },
+                {
+                    "id": 24,
+                    "state_name": "Telengana",
+                    "confirmed": 66,
+                    "discharged": 1,
+                    "deaths": 1,
+                    "state_code": "IN-TG"
+                },
+                {
+                    "id": 25,
+                    "state_name": "Uttarakhand",
+                    "confirmed": 7,
+                    "discharged": 2,
+                    "deaths": 0,
+                    "state_code": "IN-UT"
+                },
+                {
+                    "id": 26,
+                    "state_name": "Uttar Pradesh",
+                    "confirmed": 65,
+                    "discharged": 11,
+                    "deaths": 0,
+                    "state_code": "IN-UP"
+                },
+                {
+                    "id": 27,
+                    "state_name": "West Bengal",
+                    "confirmed": 18,
+                    "discharged": 0,
+                    "deaths": 1,
+                    "state_code": "IN-WB"
+                }
+            ],
+            "total": {
+                "confirmed": 1024,
+                "discharged": 96,
+                "deaths": 27
+            }
+        }
+    ]
+}
